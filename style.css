@@ -3,6 +3,15 @@
     padding:0;
     box-sizing:border-box;
 }
+.section-p1{   /*section padding 01*/
+    padding: 40px 80px;
+}
+section-m1{
+    padding:40px 80px;
+}
+body{
+    width: 100%;
+}
 
 /* navbar */
 .navbar{
@@ -10,8 +19,12 @@
     align-items:center;
     justify-content:space-between;
     padding:20px 80px; /*top-bottom:20px  right-left:80px*/
-    background-color:#E3E6F3;
+    background-color:#a27f3e;
     box-shadow: 0 /* from x*/ 5px /*from y*/ 5px /*radius*/ rgba(0,0.4,0,0.4);
+    z-index:999;
+    position:sticky;
+    top:0;
+    left:0;
 }
 #nav{
     display:flex;
@@ -25,25 +38,26 @@
 }
 #nav li a{
     text-decoration:none;
-    font-size:18px;
+    font-size:20px;
     font-weight:600;
     color:black;
     display:inline-block;
     transition:0.3s ease;
 }
 #nav li a:hover{
-    color:#ff0000;
-    transform:scale(1.08 , 1.12); /*scale(x,y)*/
+    color:#fcfcfb;
+    transform:scale(1.19 , 1.25); /*scale(x,y)*/
 }
 
 
 /* home page */
 #below_nav{
-    background-image: url("hero01.jpg");
-    height:70vh;
+    background-image: url("img/hero_01.jpg");
+    height:90vh;
     width:100%;
     background-size:cover;
     background-position: top 25% right 0;
+    background-repeat: no-repeat;
     padding: 0 /*top-bottom*/  80px /*right-left*/ ;
     display:flex;
     flex-direction:column;
@@ -51,9 +65,161 @@
     justify-content:center;
 }
 
-#below_nav h4{
-    padding-bottom: 15px;
+#below_nav h3{
+    padding-bottom: 18px;
 }
 #below_nav h1{
-color:
+ color: #961a1a;
 }
+
+#below_nav button{
+    padding:10px;
+    font-size:20px;
+    border:2px solid black;
+    border-radius:18px;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 600;
+    cursor: pointer;
+}
+#below_nav button:hover{
+    background-color: rgb(163, 216, 2);
+}
+
+#feature{
+    display:flex;
+    align-items:center;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width:180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 11px 15px 4px rgba(9, 8, 8, 0.05);
+    border: 2.5px solid black;
+    border-radius: 8px;
+    margin:15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 2px rgba(27, 18, 192, 0.1);
+    border-radius: 15px;
+    transform:scale(1.02 , 1); /*scale(x ,y)*/
+}
+#feature fe-box img{
+    width:100%;
+    margin-bottom:10px;
+}
+#feature .fe-box h4{
+    display:inline-block;
+    padding: 8px 9px 6px 8px;
+    line-height:1;
+    border-radius:5px;
+    color:#088178;
+    background-color: #fddde4;
+}
+#feature .fe-box:nth-child(2) h4{
+    background-color: rgb(216, 218, 108);
+}
+#feature .fe-box:nth-child(3) h4{
+    background-color: rgb(219, 206, 247);
+}
+#feature .fe-box:nth-child(4) h4{
+    background-color: rgb(183, 224, 183);
+}
+#feature .fe-box:nth-child(5) h4{
+    background-color: rgb(223, 160, 147);
+}
+
+
+/* our products style */
+#product1{
+    text-align:center;
+}
+#product1 .product-container{
+    display:flex;
+    justify-content: space-between;
+    padding-top:20px;
+    flex-wrap:wrap;
+}
+#product1 .pro{
+    width:250px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border:1px solid #263228;
+    border-radius: 15px;
+    cursor:pointer;
+   
+    margin: 15px 0;
+}
+#product1 .pro:hover{
+    box-shadow:12px 12px 3px rgba(9, 8, 40, 0.1);
+    border-radius:0;
+    transform: scale(1.1,1.1);
+}
+#product1 .pro img{
+    width:100%;   /*width: 100% makes the image stretch (or shrink) 
+    to match the width of its parent container, i.e., the .pro div.*/
+    border-radius: 15px;
+}
+#product1 .pro .descrip{
+    text-align:start;
+    padding:10px 0;
+}
+#product1 .pro .descrip span{
+    color:#060663;
+    font-size:18px;
+}
+#product1 .pro .descrip h3{
+    padding-top:7px;
+    font-size:20px;
+    font-weight:700;
+}
+#product1 .pro .descrip .rating i{
+    font-size:15px;
+    color:rgb(243, 181, 25);
+}
+#product1 .pro .descrip h3{
+    padding-top:7px;
+    font-size:20px;
+    font-weight:700;
+}
+#product1 .pro button{
+    padding:5px;
+    border-radius: 11px;
+}
+#product1 .pro button:hover{
+    transform:scale(1.2 , 1.2)
+}
+
+/* banner */
+#banner .video-bg{
+    width:100%;
+    height:50vh;
+    position:relative;
+    overflow:hidden;
+}
+#banner .video-bg video{
+    min-width:100%;
+    height:50vh;
+    position:absolute;
+    z-index:-1;
+}
+#banner .content{
+   text-align:center;
+}
+
+#banner .content button{
+   padding: 10px;
+   font-size:23px;
+   border-radius:8px;
+   background-color: #dd5e5e;
+   font-weight:600;
+   font-family:'Times New Roman', Times, serif;
+}
+#banner .content button:hover{
+    cursor:pointer;
+    background-color: #f0ba25;
+}
+
+/* below banner text/pic banner */
