@@ -402,6 +402,7 @@ footer .col{
 }
 footer .logo{
     margin-bottom: 30px;
+    width:130px;
 }
 footer h4{
     font-size:14px;
@@ -433,6 +434,12 @@ footer .install .row{
     align-items: center;
     gap:10px;
 }
+footer .install .row img{
+    width:180px;
+}
+footer .install .gateways img{
+    width:280px;
+}
 footer .install img{
     margin:8px 0 12px 0; /*top right bottom left*/
 }
@@ -442,6 +449,9 @@ footer .install img{
 
 /* media query */
 @media (max-width:770px){
+    .section-p1{
+        padding: 40px 40px;
+    }
     #nav{
         display:flex;
         flex-direction: column;
@@ -477,10 +487,60 @@ footer .install img{
         color:black;
         font-size: 28px;
     }
+    #product1 .product-container{
+        justify-content: center;   
+    }
+    #product1 .pro{
+        margin:15px;
+    }
+    
+}
 
+@media(max-width:480px){
+    .navbar{
+       padding:10px 30px; /*top-bottom:20px  right-left:80px*/
+       width:100%;
+    }
+    footer .install .row img{
+       width:100px;
+    }
+    #txt-banner2{
+       padding:20px;
+    }
+}
+
+@media(max-width:405px){
+    #txt-banner2 .banner1{
+      min-width: 180px;
+      height:20vh;
+      padding:30px;
+    }
+    #txt-banner2 .banner2{
+      min-width: 280px;
+      height:20vh;
+      padding:30px;
+    }
+    #txt-banner2 .banner3{
+      min-width: 280px;
+      height:20vh;
+      padding:30px;
+    }
+}
+
+@media(max-width:320px){
+    #txt-banner1 .banner-box1{
+        min-width: 200px;
+        height: 30vh;
+    }
 }
 
 @media (max-width:660px){
+    #below_nav h3{
+        font-size: 15px;
+    }
+    #below_nav h1{
+        font-size:20px;
+    }
     #feature{
         display:flex;
         flex-direction: column;
