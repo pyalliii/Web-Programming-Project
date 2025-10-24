@@ -10,11 +10,11 @@ section-m1{
     padding:40px 80px;
 }
 button.normal{
-    font-size: 14x;
+    font-size: 25x;
     font-weight: 600;
     padding: 15px 30px ;
     color:black;
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(205, 203, 203);
     border-radius: 4px;
     cursor:pointer;
     border: none;
@@ -37,6 +37,8 @@ body{
     width: 100%;
 }
 
+
+/*..................Home Page..................*/
 /* navbar */
 .navbar{
     display:flex;
@@ -70,7 +72,7 @@ body{
 }
 #nav li a:hover{
     color:#0e0456;
-    background-color: #eeec6a;
+    background-color: #8bfca5;
     transform:scale(1.19 , 1.25); /*scale(x,y)*/
 }
 #mobile{
@@ -81,7 +83,7 @@ body{
 
 /* home page */
 #below_nav{
-    background-image: url("img/back7.jpg");
+    background-image: url("img/background-nav.jpg");
     height:80vh;
     width:100%;
     background-size:cover;
@@ -118,7 +120,7 @@ body{
     cursor: pointer;
 }
 #below_nav button:hover{
-    background-color: rgb(247, 244, 94);
+    background-color: rgb(54, 250, 119);
 }
 
 #feature{
@@ -447,7 +449,7 @@ footer .install img{
     text-align: center;
 }
 
-/* media query */
+/*..........home page media query...............*/
 @media (max-width:770px){
     .section-p1{
         padding: 40px 40px;
@@ -527,13 +529,6 @@ footer .install img{
     }
 }
 
-@media(max-width:320px){
-    #txt-banner1 .banner-box1{
-        min-width: 200px;
-        height: 30vh;
-    }
-}
-
 @media (max-width:660px){
     #below_nav h3{
         font-size: 15px;
@@ -575,18 +570,110 @@ footer .install img{
       height:50vh;
     }
 }
-/*
-@media (max-width:470px){
-    #txt-banner2 .banner1{
-      min-width: 280px;
-      height:20vh;
+
+
+
+
+/*.................Contact Pge..................*/
+#contact-below_nav{
+    background-image: url("img/contact-background.jpg");
+    width:100%;
+    height:30vh;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+#contact-below_nav h1 ,
+#contact-below_nav p{
+    color:rgb(0, 0, 0);
+    letter-spacing: 3px;
+    padding-top: 10px ;
+}
+#cont-details{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#cont-details .details{
+    width:45%; 
+}
+#cont-details .details span ,
+#form form span{
+    font-size: 14px;
+}
+#cont-details .details h2 ,
+#form form h2{
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#cont-details .details h3{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+#cont-details .details li{
+    list-style-type: none;
+    display: flex;
+    padding: 10px 0;
+}
+#cont-details .details li i{
+    font-size: 15px;
+    padding-right: 20px;
+}
+#cont-details .details p{
+    margin: 0;
+    font-size: 15px;
+}
+#cont-details .map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+#cont-details .map {
+    width: 50%; /* ensures it aligns nicely with .details */
+    height:400px;
+}
+
+#form{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding:20px;
+    border:1px solid black;
+    background-color: #82b2af;
+}
+#form form{
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width:50%;
+}
+#form form input ,
+#form form textarea{
+    width:100%;
+    padding: 12px 15px;
+    outline:none;
+    margin-bottom: 20px;
+    border:2px solid rgb(157, 156, 156)
+}
+#form form button:hover{
+    background-color: #105c57;
+}
+
+
+/*.......contact page media query.......*/
+@media (max-width:499px){
+    #cont-details .details h2 ,
+    #form form h2{
+      font-size: 15px;
+      line-height: 20px;
+      padding: 12px 0;
     }
-    #txt-banner2 .banner2{
-      min-width: 280px;
-      height:20vh;
+    #cont-details .details li p{
+      font-size: 10px;
     }
-    #txt-banner2 .banner3{
-      min-width: 280px;
-      height:20vh;
-    }
-}*/
+}
